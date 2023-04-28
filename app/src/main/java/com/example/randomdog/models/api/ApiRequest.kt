@@ -2,9 +2,9 @@ package com.example.randomdog.models.api
 import com.example.randomdog.models.Dog
 import retrofit2.http.GET
 
-const val BASE_URL = "https://random.dog/"
+const val BASE_URL = "https://randomfox.ca/"
 
 interface ApiRequest {
-    @GET("woof.json")
+    @GET("floof")
     suspend fun getRandomDog(): Dog
 }

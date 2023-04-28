@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             try{
                 val response = api.getRandomDog()
                 withContext(Dispatchers.Main) {
-                    Glide.with(applicationContext).load(response.url).into(ImageView)
+                    Glide.with(applicationContext).load(response.image).into(ImageView)
                 }
                    /* if (response.fileSizeBytes < 400000) {
                         withContext(Dispatchers.Main){
